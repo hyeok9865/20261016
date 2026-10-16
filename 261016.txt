@@ -1,0 +1,62 @@
+중간고사 대체 과제
+데이터분석 하고 싶은 주제 정하고 주제에 대한 설명과 데이터분석 계획을 쓴 HTML 슬라이드덱 URL 제출 25일까지
+
+레퍼런스를 잘 넣어줘야 한다
+(폴더구조 깔끔하게)
+
+확률과 통계로 HTML슬라이드덱을 만들고 싶은데 레퍼런스를 잘 넣을 수 있도록, 너와 내가 소통을 잘 할 수 있도록 폴더구조 정리해줘
+
+_inbox 폴더 만들고 liberary.md 파일 만든 후
+
+manim 라이브러리
+seaborn 라이브러리
+anime.js 등을 활용해서
+모션그래픽형태의 그래프들을 많이 넣었으면 좋겠다
+
+claude in chrome 사용해서
+google flow 로그인해놓을테니 여기서 에셋을 만들어 써달라
+
+getdesign.md
+들어가서 마음에 드는 거 골라서.
+npx getdesign@latest add discord (앞에 ! 붙이기)
+
+
+
+_inbox에 내가 필요하다고 느끼는 것들 많이 넣어놨다.
+그리고 디자인컨셉은 피피티양식 디자인하나랑 claude.md 와 design.md에 있는 디스코드 디자인 각각 넣어달라
+대상은 데이터분석 입문을 하는 대학교 비전공자 대상 수업이다.
+html slide deck을 만들어달라
+하이라이트 부분만 샘플로 먼저 만들어줘
+
+-------------------------------------------------------------------
+
+import kagglehub
+
+# Download latest version
+path = kagglehub.dataset_download("uciml/red-wine-quality-cortez-et-al-2009")
+
+print("Path to dataset files:", path)
+
+이걸로 데이터분석을 해보고 싶다.
+주피터노트북 형태로도 보여주고 웹 대시보드 형태로 보고서도 써줘
+
+깃허브 cli 로그인시켜줘
+! gh auth login (느낌표 넣으면 선택지 줌)
+
+이 프로토타입
+주피터노트북 켜줘
+streamlit
+
+target feature (우리가 알고 싶은거/여기에 영향을 줄수 있는 변수들 -- 타겟변수)
+
+
+과제
+firecrawl, kaggle 등으로 데이터 수집
+AI agent로 데이터분석
+데이터분석 결과로 슬라이드덱 만들기
+깃허브 cli로 발표자료 링크 업로드 (발표 슬라이드 웹 주소를 올려주세요)
+
+
+과제랑 중간고사 과제랑 어떤차이 인지
+중간고사과제를 kaggle 로 데이터 수집해서 해도 되는지
+주제는 자유인지 (꼭 전공쪽이 아니어도 되는지)
