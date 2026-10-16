@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>데이터 분석 입문 · 확률과 통계</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+      background: #0a0d3a;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .wrap { text-align: center; padding: 2rem; }
+    .badge {
+      display: inline-block;
+      background: #ec48bd; color: #fff;
+      font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+      border-radius: 16px; padding: 0.3em 0.9em; margin-bottom: 1.2rem;
+    }
+    h1 { font-size: 2.4rem; margin-bottom: 0.4rem; }
+    .sub { color: #9ba0c8; margin-bottom: 2.4rem; }
+    .grid { display: flex; gap: 1.6rem; justify-content: center; flex-wrap: wrap; }
+    .card {
+      width: 300px; padding: 2rem 1.6rem;
+      border-radius: 40px; text-decoration: none; color: #fff;
+      transition: transform 0.2s;
+      display: block;
+    }
+    .card:hover { transform: translateY(-6px); }
+    .card .tag {
+      display: inline-block; font-size: 0.65rem; font-weight: 700;
+      text-transform: uppercase; border-radius: 999px;
+      padding: 0.3em 0.9em; margin-bottom: 1rem;
+    }
+    .card h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .card p { font-size: 0.85rem; opacity: 0.9; }
+    .card.ppt { background: #ffffff; color: #1f3864; }
+    .card.ppt .tag { background: #2e75b6; color: #fff; }
+    .card.discord { background: linear-gradient(135deg, #ec48bd, #5865f2); }
+    .card.discord .tag { background: #35ed7e; color: #000; }
+    .note { margin-top: 2.4rem; font-size: 0.8rem; color: #9ba0c8; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="badge">Data 101 · 확률과 통계</span>
+    <h1>데이터 분석 입문 슬라이드덱</h1>
+    <p class="sub">비전공자를 위한 대학 강의 · 디자인 컨셉 2종</p>
+
+    <div class="grid">
+      <a class="card ppt" href="deck-ppt.html">
+        <span class="tag">Design 1</span>
+        <h2>PPT형</h2>
+        <p>대학 강의식 무난한 디자인. 흰 배경 + 남색 헤딩 + 표/박스 레이아웃.</p>
+      </a>
+      <a class="card discord" href="deck-discord.html">
+        <span class="tag">Design 2</span>
+        <h2>Discord형</h2>
+        <p>인디고 캔버스 + 블러플/마젠타 그라디언트, All-caps 디스플레이 타이포.</p>
+      </a>
+    </div>
+
+    <p class="note">방향키 ← → 로 슬라이드 이동 · 하이라이트 샘플 7장</p>
+  </div>
+</body>
+</html>

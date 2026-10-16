@@ -1,0 +1,124 @@
+/* ============ PPT형 디자인 (대학 강의용) ============ */
+:root {
+  --ppt-navy: #1f3864;
+  --ppt-blue: #2e75b6;
+  --ppt-accent: #c00000;
+  --ppt-bg: #ffffff;
+  --ppt-panel: #eef3fa;
+  --ppt-text: #333333;
+  --ppt-muted: #666666;
+}
+
+/* reveal 기본 변수 오버라이드 */
+.reveal {
+  --r-background-color: var(--ppt-bg);
+  --r-main-color: var(--ppt-text);
+  --r-heading-color: var(--ppt-navy);
+  --r-main-font: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  --r-heading-font: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  --r-heading-font-weight: 700;
+  --r-heading-line-height: 1.25;
+  --r-link-color: var(--ppt-blue);
+  --r-selection-background-color: rgba(46, 117, 182, 0.3);
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+/* 헤딩 */
+.reveal h1, .reveal h2, .reveal h3 {
+  color: var(--ppt-navy);
+  margin-bottom: 0.5em;
+}
+.reveal h1 { font-size: 1.9em; }
+.reveal h2 {
+  font-size: 1.45em;
+  border-bottom: 4px solid var(--ppt-blue);
+  padding-bottom: 0.2em;
+}
+
+/* 본문 */
+.reveal p, .reveal li { font-size: 0.72em; line-height: 1.6; color: var(--ppt-text); }
+.reveal ul { margin-left: 1.2em; }
+.reveal li { margin-bottom: 0.4em; }
+
+/* ---- 커버 슬라이드 ---- */
+.reveal .cover {
+  text-align: center;
+  padding-top: 1.5em;
+}
+.reveal .cover .cover-bar {
+  width: 120px; height: 10px;
+  background: var(--ppt-accent);
+  margin: 0 auto 0.6em;
+  border-radius: 2px;
+}
+.reveal .cover h1 { color: #ffffff; font-size: 2.6em; letter-spacing: -0.02em; }
+.reveal .cover .cover-sub { color: #cfe0f2; font-size: 1em; margin-top: 0.6em; }
+.reveal .cover .cover-meta {
+  margin-top: 3em; font-size: 0.6em; color: #9fb8d8;
+  border-top: 1px solid rgba(255,255,255,0.25); padding-top: 1em; width: 60%; margin-left: auto; margin-right: auto;
+}
+
+/* ---- 개념 박스 ---- */
+.reveal .def {
+  background: var(--ppt-panel);
+  border-left: 6px solid var(--ppt-blue);
+  border-radius: 4px;
+  padding: 0.9em 1.2em;
+  margin: 0.8em 0;
+}
+.reveal .def strong { color: var(--ppt-navy); }
+.reveal .def-tag {
+  display: inline-block;
+  background: var(--ppt-blue); color: #fff;
+  font-size: 0.5em; font-weight: 700;
+  padding: 0.25em 0.9em; border-radius: 999px;
+  margin-bottom: 0.6em;
+}
+
+/* ---- 예시 박스 ---- */
+.reveal .example {
+  background: #fdf6f6;
+  border: 1px solid #f0d0d0;
+  border-left: 6px solid var(--ppt-accent);
+  border-radius: 4px;
+  padding: 0.9em 1.2em;
+  margin: 0.8em 0;
+}
+.reveal .example .example-tag {
+  color: var(--ppt-accent); font-weight: 700; font-size: 0.55em;
+  display: inline-block; margin-bottom: 0.4em;
+}
+
+/* ---- 표 ---- */
+.reveal table {
+  border-collapse: collapse; font-size: 0.6em; margin: 0.8em 0; width: 100%;
+}
+.reveal table th {
+  background: var(--ppt-navy); color: #fff; font-weight: 700;
+  padding: 0.5em 1em; text-align: left;
+}
+.reveal table td {
+  border-bottom: 1px solid #d9d9d9; padding: 0.5em 1em; color: var(--ppt-text);
+}
+.reveal table tr:nth-child(even) td { background: #f7f9fc; }
+
+/* ---- 수식 박스 ---- */
+.reveal .formula {
+  background: var(--ppt-panel);
+  border: 1px solid #d7e2f0;
+  border-radius: 8px;
+  padding: 1em 1.4em;
+  margin: 1em 0;
+  text-align: center;
+}
+
+/* ---- 출처 ---- */
+.reveal .ref {
+  font-size: 0.45em; color: var(--ppt-muted); text-align: right; margin-top: 2em;
+}
+
+/* ---- 푸터 (오른쪽 하단 슬라이드번호는 reveal slideNumber) ---- */
+.reveal .slides section::after { display: none; }

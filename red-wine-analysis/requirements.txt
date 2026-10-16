@@ -1,0 +1,12 @@
+kagglehub
+pandas
+numpy
+matplotlib
+seaborn
+scipy
+scikit-learn
+plotly
+ipykernel
+nbformat
+nbconvert
+streamlit

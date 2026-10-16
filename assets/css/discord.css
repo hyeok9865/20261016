@@ -1,0 +1,157 @@
+/* ============ Discord 디자인 (DESIGN.md 토큰 반영) ============ */
+:root {
+  /* colors */
+  --dc-primary: #5865f2;      /* Blurple */
+  --dc-green: #35ed7e;        /* Electric Green */
+  --dc-magenta: #ec48bd;      /* Vibrant Magenta */
+  --dc-link: #00b0f4;         /* Link Cyan */
+  --dc-canvas: #0a0d3a;       /* Indigo Canvas */
+  --dc-surface-indigo: #1e2353;
+  --dc-surface-onyx: #23272a;
+  --dc-black: #000000;
+  --dc-ink: #ffffff;
+  --dc-ink-dark: #000000;
+  --dc-muted: #9ba0c8;
+
+  /* radius */
+  --dc-r-sm: 12px;
+  --dc-r-md: 14px;
+  --dc-r-lg: 16px;
+  --dc-r-xl: 40px;
+  --dc-r-jumbo: 120px;
+  --dc-r-full: 9999px;
+}
+
+/* reveal 기본 변수 오버라이드 */
+.reveal {
+  --r-background-color: var(--dc-canvas);
+  --r-main-color: var(--dc-ink);
+  --r-heading-color: var(--dc-ink);
+  --r-main-font: "Space Grotesk", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --r-heading-font: "Space Grotesk", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --r-heading-font-weight: 800;
+  --r-heading-line-height: 1.1;
+  --r-link-color: var(--dc-link);
+  --r-selection-background-color: rgba(88, 101, 242, 0.4);
+}
+
+/* 캔버스: 인디고 + 블러플↔마젠타 그라디언트 글로우 */
+.reveal .slides {
+  text-align: left;
+}
+.reveal section {
+  background:
+    radial-gradient(60% 80% at 85% 10%, rgba(236, 72, 189, 0.16), transparent 60%),
+    radial-gradient(50% 70% at 10% 90%, rgba(88, 101, 242, 0.22), transparent 60%);
+}
+
+/* 헤딩: All-caps, 무거운 디스플레이 */
+.reveal h1, .reveal h2, .reveal h3 {
+  color: var(--dc-ink);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+.reveal h1 { font-size: 2.2em; }
+.reveal h2 { font-size: 1.5em; }
+.reveal h3 { font-size: 1em; font-weight: 700; }
+
+/* 본문 */
+.reveal p, .reveal li { font-size: 0.66em; line-height: 1.6; color: var(--dc-ink); }
+
+/* ---- 카드 (surface-indigo, xl 라운드) ---- */
+.reveal .dc-card {
+  background: var(--dc-surface-indigo);
+  border-radius: var(--dc-r-xl);
+  padding: 1.6em 1.8em;
+  margin: 0.7em 0;
+}
+.reveal .dc-card .dc-title {
+  font-size: 0.72em; font-weight: 700; text-transform: uppercase;
+  color: var(--dc-ink); margin-bottom: 0.5em;
+}
+.reveal .dc-card p, .reveal .dc-card li { color: #d6d9f0; }
+
+/* ---- 배지 (magenta) ---- */
+.reveal .dc-badge {
+  display: inline-block;
+  background: var(--dc-magenta);
+  color: var(--dc-ink);
+  font-size: 0.5em; font-weight: 700; text-transform: uppercase;
+  border-radius: var(--dc-r-lg);
+  padding: 0.25em 0.8em;
+  margin-bottom: 0.6em;
+}
+
+/* ---- 그라디언트 패널 (magenta gradient feature panel) ---- */
+.reveal .dc-feature {
+  background: linear-gradient(135deg, var(--dc-magenta), var(--dc-primary));
+  border-radius: var(--dc-r-xl);
+  padding: 1.6em 1.8em;
+  margin: 0.7em 0;
+  color: var(--dc-ink);
+}
+.reveal .dc-feature .dc-title {
+  font-size: 0.72em; font-weight: 800; text-transform: uppercase; margin-bottom: 0.5em;
+}
+
+/* ---- 스탯 카드 (blurple) ---- */
+.reveal .dc-stat {
+  background: var(--dc-primary);
+  border-radius: var(--dc-r-xl);
+  padding: 1.2em 1.4em;
+  text-align: center;
+  display: inline-block;
+  min-width: 4em;
+}
+.reveal .dc-stat .num { font-size: 2.2em; font-weight: 800; line-height: 1; }
+.reveal .dc-stat .lbl { font-size: 0.5em; text-transform: uppercase; opacity: 0.9; }
+
+/* ---- CTA 버튼 (green = high intent) ---- */
+.reveal .dc-cta {
+  display: inline-block;
+  background: var(--dc-green);
+  color: var(--dc-ink-dark);
+  font-size: 0.6em; font-weight: 700;
+  border-radius: var(--dc-r-sm);
+  padding: 0.55em 1.4em;
+  margin-top: 0.8em;
+}
+
+/* ---- 표 ---- */
+.reveal table {
+  border-collapse: separate; border-spacing: 0;
+  font-size: 0.58em; margin: 0.7em 0; width: 100%;
+  border-radius: var(--dc-r-lg); overflow: hidden;
+}
+.reveal table th {
+  background: var(--dc-surface-onyx); color: var(--dc-ink); font-weight: 700;
+  padding: 0.55em 1em; text-align: left;
+}
+.reveal table td {
+  background: var(--dc-surface-indigo); color: #d6d9f0;
+  border-top: 1px solid var(--dc-surface-onyx);
+  padding: 0.55em 1em;
+}
+
+/* ---- 수식 박스 ---- */
+.reveal .dc-formula {
+  background: var(--dc-black);
+  border-radius: var(--dc-r-xl);
+  padding: 1.2em 1.5em;
+  margin: 0.9em 0;
+  text-align: center;
+}
+
+/* ---- 출처 ---- */
+.reveal .ref {
+  font-size: 0.45em; color: var(--dc-muted); text-align: right; margin-top: 2em;
+}
+
+/* ---- 커버 ---- */
+.reveal .dc-cover { text-align: center; padding-top: 1em; }
+.reveal .dc-cover h1 { font-size: 2.8em; text-transform: uppercase; }
+.reveal .dc-cover .dc-sub { color: var(--dc-muted); font-size: 0.8em; margin-top: 0.5em; }
+.reveal .dc-cover .dc-meta {
+  margin-top: 2.5em; font-size: 0.55em; color: var(--dc-muted);
+  text-transform: uppercase; letter-spacing: 0.12em;
+}
